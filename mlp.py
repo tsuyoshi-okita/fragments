@@ -261,7 +261,7 @@ def load_data():
 def train(nin=512, nout=10, n_hidden=500, lrate=0.000001, n_epochs=1000,
           decay_c=0.1,
           max_epochs=1000,
-          dispFreq=1000,
+          dispFreq=10,
           batch_size=200,          
           valid_batch_size=64,          
           validFreq=100,
@@ -400,10 +400,10 @@ if __name__ == '__main__':
              'nout': [10],
              'n_hidden': [500],
              'learning_rate': [0.001],
-#             'optimizer': ['adadelta'],
+             'optimizer': ['adadelta'],
 #             'optimizer': ['adagrad']                    
-#             'optimizer': ['sgd']
-                    'optimizer': ['adam'],
+#                    'optimizer': ['sgd'],
+#                    'optimizer': ['adam'],
 #             'optimizer': ['rmsprop']
 #             'batch_size': [200],
           'batch_size': [784],                              
